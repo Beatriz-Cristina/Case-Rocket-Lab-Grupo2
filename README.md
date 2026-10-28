@@ -26,10 +26,7 @@ Detalhes das regras, do modelo e das decisões em [docs/arquitetura.md](docs/arq
 │   └── Job-Case-Grupo2-SP.json
 └── docs/
     ├── arquitetura.md
-    ├── Conferencia_Idempotencia.ipynb
-    ├── job_execucao_1.png
-    ├── job_execucao_2.png
-    └── painel/
+    └── Conferencia_Idempotencia.ipynb
 ```
 
 Os notebooks ficam na raiz porque o Job os lê por esse caminho. Eles estão salvos com os outputs da última execução.
@@ -47,9 +44,6 @@ Os CSVs para o Power BI ficam em `/Volumes/vcredit/gold/exports/`.
 
 O Job roda todos os dias às 6h (America/Sao_Paulo).
 
-![Execução 1](docs/job_execucao_1.png)
-![Execução 2](docs/job_execucao_2.png)
-
 ## Idempotência
 
 Todas as tabelas são gravadas em overwrite, as views são recriadas com `CREATE OR REPLACE` e as chaves substitutas são determinísticas. Para comprovar, o Job foi executado duas vezes e, depois de cada execução, o notebook `docs/Conferencia_Idempotencia.ipynb` registrou a quantidade de linhas e um checksum do conteúdo de cada tabela e view. As colunas com o horário da carga ficam de fora, porque mudam a cada execução.
@@ -58,7 +52,7 @@ Resultado: **34 de 34 tabelas e views idênticas** entre as duas execuções (8 
 
 ## Painel
 
-O painel no Power BI consome os CSVs da Gold e segue os relacionamentos descritos no fim do `Silver_to_Gold`. As prints estão em `docs/painel/`.
+O painel no Power BI consome os CSVs da Gold e segue os relacionamentos descritos no fim do `Silver_to_Gold`.
 
 ## Dados
 
