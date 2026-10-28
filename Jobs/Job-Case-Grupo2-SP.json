@@ -16,7 +16,7 @@
       "task_key": "to_Bronze",
       "run_if": "ALL_SUCCESS",
       "notebook_task": {
-        "notebook_path": "Workspace/Users/leokenzo2006.tanaka@gmail.com/Case-Rocket-Lab-Grupo2/Landing_to_Bronze",
+        "notebook_path": "Landing_to_Bronze",
         "source": "GIT"
       },
       "timeout_seconds": 0,
@@ -33,7 +33,7 @@
       ],
       "run_if": "ALL_SUCCESS",
       "notebook_task": {
-        "notebook_path": "Workspace/Users/leokenzo2006.tanaka@gmail.com/Case-Rocket-Lab-Grupo2/Bronze_to_Silver",
+        "notebook_path": "Bronze_to_Silver",
         "source": "GIT"
       },
       "timeout_seconds": 0,
@@ -50,7 +50,7 @@
       ],
       "run_if": "ALL_SUCCESS",
       "notebook_task": {
-        "notebook_path": "Workspace/Users/leokenzo2006.tanaka@gmail.com/Case-Rocket-Lab-Grupo2/Silver_to_Gold",
+        "notebook_path": "Silver_to_Gold",
         "source": "GIT"
       },
       "timeout_seconds": 0,
