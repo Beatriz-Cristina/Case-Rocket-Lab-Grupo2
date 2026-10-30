@@ -58,6 +58,8 @@ O painel no Power BI consome os CSVs da Gold e segue os relacionamentos descrito
 
 Os arquivos de origem e os CSVs exportados são confidenciais e não fazem parte deste repositório.
 
+## Slides da Apresentação
+[apresentação](https://docs.google.com/presentation/d/1h0MHGMGUkirMjpYboMVQ4U5zCFpJPYa0Muimpe3APpw/edit?usp=sharing)
 ## Integrantes
 
 - Annalice
